@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Network, TrendingUp, Sparkles, Building, KeyRound, Vote, Briefcase, Coins, Home, Stethoscope } from "lucide-react";
@@ -58,9 +59,9 @@ const CTA = () => {
         
         <div className="mt-20 max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Partner with Blockchain Protocols</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Institutional Investors Welcome</h2>
             <p className="text-xl text-slate-300">
-              We partner with blockchain protocols to facilitate secure, transparent investments through our DAO structure.
+              We invite institutional investors to partner with our DAO for secure, transparent investments in real-world assets.
             </p>
           </div>
           
