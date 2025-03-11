@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Network, TrendingUp, Sparkles, Building, KeyRound } from "lucide-react";
+import { Network, TrendingUp, Sparkles, Building, KeyRound, Vote, Briefcase, Coins } from "lucide-react";
 
 const CTA = () => {
   return (
