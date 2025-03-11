@@ -1,7 +1,13 @@
 
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +20,28 @@ const Header = () => {
           <a href="#features" className="text-slate-300 hover:text-emerald-400 transition-colors" onClick={() => setIsMenuOpen(false)}>Why Cabble</a>
           <a href="#how-it-works" className="text-slate-300 hover:text-emerald-400 transition-colors" onClick={() => setIsMenuOpen(false)}>How It Works</a>
           <a href="#" className="text-slate-300 hover:text-emerald-400 transition-colors" onClick={() => setIsMenuOpen(false)}>About Us</a>
-          <Button variant="outline" className="ml-0 md:ml-4 border-blue-400 text-blue-400 hover:bg-blue-950" onClick={() => setIsMenuOpen(false)}>
-            Connect Wallet
-          </Button>
+          
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="bg-transparent hover:bg-slate-800 text-emerald-400 flex items-center gap-1 font-medium">
+                Sectors <ChevronDown size={16} />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="bg-slate-800 border-slate-700 text-slate-200">
+              <DropdownMenuItem className="hover:bg-slate-700 hover:text-emerald-400 cursor-pointer">
+                Business
+              </DropdownMenuItem>
+              <DropdownMenuItem className="hover:bg-slate-700 hover:text-emerald-400 cursor-pointer">
+                Infrastructure
+              </DropdownMenuItem>
+              <DropdownMenuItem className="hover:bg-slate-700 hover:text-emerald-400 cursor-pointer">
+                Real Estate
+              </DropdownMenuItem>
+              <DropdownMenuItem className="hover:bg-slate-700 hover:text-emerald-400 cursor-pointer">
+                Healthcare
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </nav>
         <Button 
           className="md:hidden bg-transparent hover:bg-slate-800 text-white p-2"
