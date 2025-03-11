@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Network, TrendingUp, Sparkles, Building, KeyRound, Vote, Briefcase, Coins } from "lucide-react";
+import { Network, TrendingUp, Sparkles, Building, KeyRound, Vote, Briefcase, Coins, Home, Stethoscope } from "lucide-react";
 
 const CTA = () => {
   return (
@@ -72,16 +72,16 @@ const CTA = () => {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               <div className="p-4 bg-slate-700/50 rounded-lg flex items-center justify-center h-24">
-                <div className="text-blue-400 text-4xl">🏛️</div>
-              </div>
-              <div className="p-4 bg-slate-700/50 rounded-lg flex items-center justify-center h-24">
-                <div className="text-emerald-400 text-4xl">⛓️</div>
-              </div>
-              <div className="p-4 bg-slate-700/50 rounded-lg flex items-center justify-center h-24">
                 <div className="text-blue-400 text-4xl">🏢</div>
               </div>
               <div className="p-4 bg-slate-700/50 rounded-lg flex items-center justify-center h-24">
-                <div className="text-emerald-400 text-4xl">🌐</div>
+                <div className="text-emerald-400 text-4xl">🏗️</div>
+              </div>
+              <div className="p-4 bg-slate-700/50 rounded-lg flex items-center justify-center h-24">
+                <div className="text-blue-400 text-4xl">🏠</div>
+              </div>
+              <div className="p-4 bg-slate-700/50 rounded-lg flex items-center justify-center h-24">
+                <div className="text-emerald-400 text-4xl">⚕️</div>
               </div>
             </div>
             

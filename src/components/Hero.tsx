@@ -82,15 +82,15 @@ const Hero = () => {
                 </div>
                 <div className="bg-slate-700/70 backdrop-blur-md p-4 rounded-lg border border-slate-600 shadow-xl">
                   <div className="h-16 w-16 bg-indigo-500/20 rounded-full flex items-center justify-center">
-                    <span className="text-indigo-400 text-2xl">🔗</span>
+                    <span className="text-indigo-400 text-2xl">🏠</span>
                   </div>
-                  <p className="mt-2 text-xs text-center">Blockchain</p>
+                  <p className="mt-2 text-xs text-center">Real Estate</p>
                 </div>
                 <div className="bg-slate-700/70 backdrop-blur-md p-4 rounded-lg border border-slate-600 shadow-xl">
                   <div className="h-16 w-16 bg-purple-500/20 rounded-full flex items-center justify-center">
-                    <span className="text-purple-400 text-2xl">🗳️</span>
+                    <span className="text-purple-400 text-2xl">⚕️</span>
                   </div>
-                  <p className="mt-2 text-xs text-center">Governance</p>
+                  <p className="mt-2 text-xs text-center">Healthcare</p>
                 </div>
               </div>
             </div>
